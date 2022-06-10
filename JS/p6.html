@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Java Script</title>
+    </head>
+
+    <body>
+        <h2>Hello World</h2>
+
+        <button type="button" onclick="function1()">Button_1</button>
+        <button type="button" onclick="function2()">Button_2</button>
+        <button type="button" onclick="function3()">Button_3</button>
+
+        <script>
+            var a,b,c;
+            a=b=c=0;
+            function function1(){
+                a++
+                message()
+            }
+            //Inside Function Is Local Scope
+            function function2(){
+                b++
+                message()
+            }
+            function function3(){
+                c++
+                message()
+            }
+
+            function message(){
+                document.querySelector('h2').innerHTML = a+''+b+''+c
+            }
+
+            function add(alpha,beta){
+                return alpha+beta;
+            }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!--
+    Document Object Model (DOM)
+-->
+
+<!--
+    document.URL
+    document.querySelector
+    document.getElementById
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eswara Rohan</title>
+        
+    </head>
+
+    <body>
+
+        <h2>Java Script</h2>
+        <input type="text" id="myInput" value="test">
+        <button type="button" onclick="message()">Click Here</button>
+
+        <script>
+            function message(){
+                let temp = document.getElementById('myInput');
+                console.log(temp.value);
+            }
+
+            
+
+        </script>
+    </body>
+</html>

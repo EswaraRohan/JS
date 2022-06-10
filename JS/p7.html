@@ -1,0 +1,38 @@
+<!--
+    JavaScript Objects
+Contain more values in a single variable. Combination of properties with values.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eswara Rohan</title>
+    </head>
+    <body>
+        <h2>Java Script</h2>
+        <button type="button" onclick="message('hello world')">Click Here</button>
+        <script>
+            var person={};
+            person.first="Rohan";
+            person.last="Eswara";
+            person.message=fun();
+            person.age=30;
+            person.alive=true;
+            function fun(){
+               return 'hello'+person.first; 
+            }
+            var d=0;
+
+            function message(a){
+                d++;
+                document.querySelector('h2').innerHTML = a+d;
+                console.log(a+d);
+            }
+        </script>
+    </body>
+</html>
+
+
+<!--
+person.first == person("first")
+-->

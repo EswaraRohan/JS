@@ -1,0 +1,37 @@
+<!--
+    JavaScript Switch
+Execute code depending on the value of the switch statement
+
+-->
+
+<!-- JavaScript Conditions -->
+
+
+<html>
+    <head>    <title>Java Script</title>
+    </head>
+
+    <body>
+        <h2>Java Script</h2>
+        <button type="button" onclick="check('one')">Click Here</button>
+
+        <script>       
+            
+            function check(val){
+                console.log(val);
+                switch(val){
+                    case 'one':
+                    message('was one');
+                    break;
+                    case 'two':
+                        message('Not Matched');
+                        break;
+                }
+            }
+
+            function message(mes){
+                document.querySelector('h2').innerHTML = mes;
+            }
+        </script>
+    </body>
+</html>

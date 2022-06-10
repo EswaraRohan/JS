@@ -1,0 +1,47 @@
+<!-- Java Script String Methods -->
+
+<!--
+ JavaScript Loops
+
+For Loop
+Do-While Loop
+While Loop
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+
+        <title>Eswara Rohan</title>
+        <link rel="shortcut icon" href="https://www.youtube.com/s/desktop/f2388c5e/img/favicon.ico"/>
+    </head>
+    <body>
+        <h2>Eswara Rohan</h2>
+        <script>
+            var mySTR1 = "Hello World One Two Three World";
+            console.log(mySTR1.length);
+
+            var world = mySTR1.indexOf('World');
+            //Finds Only First Occurance
+            console.log(world);
+
+            var worldLast = mySTR1.lastIndexOf('World');            
+            console.log(worldLast);
+
+            var Search = mySTR1.search('World');
+            console.log(Search);
+
+            if (Search>=0){
+                document.querySelector('h2').innerHTML = Search;
+            }
+
+            else{
+                document.querySelector('h2').innerHTML = "Not Found";
+            }
+        </script>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!-- JavaScript Conditions -->
+
+
+<html>
+    <head>    <title>Java Script</title>
+    </head>
+
+    <body>
+        <h2>Java Script</h2>
+        <button type="button" onclick="check(0)">Click Here</button>
+
+        <script>
+
+            var var1 = "Less Than Eight";
+            var var2 = "Equal To Eight";
+            var var3 = "Greater Than Eight";
+
+
+            function check(a){
+                var a;
+                a++;
+                console.log(a);
+            if ((a<8)){
+                console.log(var1);
+                document.querySelector('h2').innerHTML = var1;
+            }
+
+            else if (a==8){
+                console.log('Equal to 8');
+            }
+
+            else{
+                console.log('Gretaer Than 8');
+            }
+            }
+            
+        </script>
+    </body>
+</html>

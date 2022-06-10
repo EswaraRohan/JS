@@ -1,0 +1,192 @@
+<!--  Array And Array Methods - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+Methods-
+Push to add at the end of the array
+E.g., myArray1.push('Last');
+
+Pop to remove from end of array item list
+E.g., myArray1.pop();
+
+shift to remove from front of the array
+E.g., myArray1.shift();
+
+unshift to add items to the front of the attay
+E.g., myArray.unshift('First');
+
+
+indexOf finds the index of the item in the list or returns -1 if not found.
+
+sort() sorts with numbers, letters and booleans
+
+reverse() is opposite of sort
+
+splice() cuts the piece from the array with starting position and how many items as parameters
+-->
+
+
+<!--  slice 
+
+slice()  returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included)
+The original array will not be modified.
+E.g., slice()/////slice(start)////slice(start, end)
+A negative index can be used, indicating an offset from the end of the sequence. slice(-2) extracts the last two elements in the sequence.
+slice(2,-1) extracts the third element through the second-to-last element in the sequence.
+ 
+const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+
+console.log(animals.slice(2));
+// expected output: Array ["camel", "duck", "elephant"]
+
+console.log(animals.slice(2, 4));
+// expected output: Array ["camel", "duck"]
+
+console.log(animals.slice(1, 5));
+// expected output: Array ["bison", "camel", "duck", "elephant"]
+
+console.log(animals.slice(-2));
+// expected output: Array ["duck", "elephant"]
+
+console.log(animals.slice(2, -1));
+// expected output: Array ["camel", "duck"]
+
+console.log(animals.slice());
+// expected output: Array ["ant", "bison", "camel", "duck", "elephant"] 
+
+-->
+
+
+<!-- concat
+The concat() method is used to merge two or more arrays. 
+This method does not change the existing arrays,
+but instead returns a new array.
+
+E.g.1,
+const array1 = ['a', 'b', 'c'];
+const array2 = ['d', 'e', 'f'];
+const array3 = array1.concat(array2);
+
+console.log(array3);
+// expected output: Array ["a", "b", "c", "d", "e", "f"]
+
+
+
+E.g.,2,
+const num1 = [1, 2, 3];
+const num2 = [4, 5, 6];
+const num3 = [7, 8, 9];
+
+const numbers = num1.concat(num2, num3);
+
+console.log(numbers);
+// results in [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+E.g.,3,
+    const num1 = [[1]];
+const num2 = [2, [3]];
+
+const numbers = num1.concat(num2);
+
+console.log(numbers);
+// results in [[1], 2, [3]]
+
+// modify the first element of num1
+num1[0].push(4);
+
+console.log(numbers);
+// results in [[1, 4], 2, [3]]
+
+-->
+
+
+<!-- Array.prototype.indexOf()
+
+The indexOf() method returns the first index at which a given element
+can be found in the array, or -1 if it is not present.
+
+
+const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
+
+console.log(beasts.indexOf('bison'));
+// expected output: 1
+
+// start from index 2
+console.log(beasts.indexOf('bison', 2));
+// expected output: 4
+
+console.log(beasts.indexOf('giraffe'));
+// expected output: -1
+
+
+-->
+
+
+<!--  Array.prototype.includes()
+
+The includes() method determines whether an array includes a certain value among its entries, returning true or false as appropriate.
+
+E.g., const array1 = [1, 2, 3];
+
+console.log(array1.includes(2));
+// expected output: true
+
+const pets = ['cat', 'dog', 'bat'];
+
+console.log(pets.includes('cat'));
+// expected output: true
+
+console.log(pets.includes('at'));
+// expected output: false
+
+
+-->
+
+
+<!-- Array.prototype.filter()
+
+The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+
+
+E.g.,
+
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+const result = words.filter(word => word.length > 6);
+
+console.log(result);
+// expected output: Array ["exuberant", "destruction", "present"]
+
+
+-->
+
+
+
+
+
+<html><head>
+    <title>JavaScript</title></head>
+    <body>
+    <h2>JavaScript</h2>
+    <button type="button" onclick="message('hello world')">Click</button>
+    <script>
+     
+     
+     
+     
+    var myArray1 = ['Laurence','Svekis',30,false]; 
+    var val1 = myArray1.push('test');
+    console.log(myArray1);
+    var val2 = myArray1.pop();
+    console.log(val2);
+    var val3 = myArray1.shift();
+    myArray1.unshift('First');
+    var val4 = myArray1.splice(1,1);
+     
+     
+    /*myArray1[myArray1.length] = "last "+ myArray1.length;
+    myArray1[2] =  40;*/
+     
+          
+    </script>
+    </body>
+    </html>
